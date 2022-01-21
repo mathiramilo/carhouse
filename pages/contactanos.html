@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CarHouse </title>
+    <link rel="shortcut icon" href="../assets/img/logo/icon-shortcut.png">
+
+    <script src="https://kit.fontawesome.com/de0eb60c48.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <section class="navbar"> <!-- Barra de Navegacion -->
+            <div class="container-1600">
+                <a class="logo" href="../index.html"> <!-- Logo -->
+                    <img src="../assets/img/logo/carhouse-logo.png" alt="logo CarHouse">
+                </a>
+        
+                <nav class="main-nav"> <!-- Navegacion -->
+                    <ul>
+                        <li>
+                            <a class="nav-link" href="../pages/comprar-home.html">Comprar</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="../pages/vender.html">Vender</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="../pages/concesionarias.html">Concesionarias</a>
+                        </li>
+                        <li>
+                            <a class="nav-link btn-ingresar" href="../pages/sign-in.html">Ingresar</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section class="banner-contactanos">
+            <h1>Contáctanos</h1>
+        </section>
+    </header>
+
+    <main class="main-contactanos">
+        <section class="section-contactanos">
+            <div class="issues">
+                <h3>Asunto</h3>
+                <a href="#">Registra tu Concesionaria</a>
+                <a href="#">Problemas con la Compra de un Vehiculo</a>
+                <a href="#">Problemas con la Venta de un Vehiculo</a>
+                <a href="#">Problemas con Concesionarias</a>
+                <a href="#">Problemas con tu Cuenta</a>
+            </div>
+            <div class="form-section">
+                <h2>Registra tu Concesionaria</h2>
+                <form class="contact-form">
+                    <div class="sign-up-field">
+                        <h3>Nombre de la Concesionaria</h3>
+                        <input type="text" name="concessionaire-name" placeholder="Ingresa el nombre" autocomplete="off" required>
+                    </div>
+                    <div class="sign-up-field">
+                        <h3>¿Que Marca Vende tu Concesionaria?</h3>
+                        <input type="text" name="brand" placeholder="Ingresa la marca que venden" autocomplete="off" required>
+                    </div>
+                    <div class="sign-up-field">
+                        <h3>Email de Contácto</h3>
+                        <input type="email" name="email" placeholder="Ingresa un email" autocomplete="off" required>
+                    </div>
+                    <div class="sign-up-field">
+                        <h3>Cuentanos Sobre tu Concesionaria</h3>
+                        <textarea name="about" id="" cols="30" placeholder="Cuente algo sobre ustedes" rows="10" minlength="25" maxlength="2500" required></textarea>
+                    </div>
+                    <input class="btn-enviar" type="submit" value="Enviar">
+                </form>
+                <img class="logo-carhouse" src="../assets/img/logo/carhouse-logo.png" alt="logo CarHouse">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <hr>
+        <div class="footer-bar"> <!-- Barra Footer -->
+            <a href="../index.html"> <!-- Logo -->
+                <img src="../assets/img/logo/carhouse-logo.png" alt="logo CarHouse">
+            </a>
+            <div class="social-media"> <!-- Redes Footer -->
+                <ul>
+                    <li> <!-- Instagram -->
+                        <a class="social-media-item" href="#" target="_blank"><img src="../assets/img/icons/instagram-oscuro.png" alt="icono instagram" width="40" height="40"></a>
+                    </li>
+                    <li> <!-- Facebook -->
+                        <a class="social-media-item" href="#" target="_blank"><img src="../assets/img/icons/facebook-oscuro.png" alt="icono facebook" width="40" height="40"></a>
+                    </li>
+                    <li> <!-- Whatsapp -->
+                        <a class="social-media-item" href="#" target="_blank"><img src="../assets/img/icons/whatsapp-oscuro.png" alt="icono whatsapp" width="40" height="40"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-sections"> <!-- Secciones Footer -->
+            <section> <!-- Categorias -->
+                <h4>Categorias</h4>
+                <ul>
+                    <li><a href="../pages/comprar-home.html">Comprar</a></li>
+                    <li><a href="../pages/vender.html">Vender</a></li>
+                </ul>
+            </section>
+
+            <section> <!-- Nosotros -->
+                <h4>Nosotros</h4>
+                <ul>
+                    <li><a href="../pages/contactanos.html">Regístra tu Concesionaria</a></li>
+                    <li><a href="#">Información Legal</a></li>
+                    <li><a href="#">Politicas de Privacidad</a></li>
+                </ul>
+            </section>
+
+            <section class="section-footer-contacto"> <!-- Contactanos -->
+                <h4>Contáctanos</h4>
+                <ul>
+                    <li><a href="#"><img class="mail-icon" src="../assets/img/icons/email.png" alt="icono email" width="35" height="35"><span>info@CarHouse.com.uy</span></a></li>
+                    <li><a href="#"><img class="phone-icon" src="../assets/img/icons/phone-call.png" alt="icono phone-call" width="35" height="35"><span>0000 00 00</span></a></li>
+                </ul>
+            </section>
+        </div>
+        <h3>© 2021 CarHouse, Inc.</h3>
+    </footer>
+</body>
+</html>

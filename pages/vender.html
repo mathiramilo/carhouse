@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CarHouse </title>
+    <link rel="shortcut icon" href="../assets/img/logo/icon-shortcut.png">
+
+    <script src="https://kit.fontawesome.com/de0eb60c48.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <section class="navbar"> <!-- Barra de Navegacion -->
+            <div class="container-1600">
+                <a class="logo" href="../index.html"> <!-- Logo -->
+                    <img src="../assets/img/logo/carhouse-logo.png" alt="logo CarHouse">
+                </a>
+        
+                <nav class="main-nav"> <!-- Navegacion -->
+                    <ul>
+                        <li>
+                            <a class="nav-link" href="../pages/comprar-home.html">Comprar</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="../pages/vender.html">Vender</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="../pages/concesionarias.html">Concesionarias</a>
+                        </li>
+                        <li>
+                            <a class="nav-link btn-ingresar" href="../pages/sign-in.html">Ingresar</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section class="vender-banner">
+            <div class="gradient-div"></div>
+            <h1>Vende tu Auto de forma <br><b>Rápida y Segura</b></h1>
+        </section>
+    </header>
+
+    <main class="main-vender">
+        <form class="form-vender">
+            <section class="brand-section"> <!-- Marca, Modelo y Ano -->
+                <div>
+                    <h2>1. Indica Marca, Modelo y Año del Vehículo</h2>
+                    <div class="sign-up-field">
+                        <h3>Marca</h3>
+                        <input type="text" name="brand" placeholder="¿Cuál es la marca de tu vehículo?" autocomplete="off" required>
+                    </div>
+                    <div class="sign-up-field">
+                        <h3>Modelo</h3>
+                        <input type="text" name="model" placeholder="¿Cuál es el modelo de tu vehículo?" autocomplete="off" required>
+                    </div>
+                    <div class="sign-up-field">
+                        <h3>Año</h3>
+                        <input type="number" name="year" placeholder="¿Cuál es el modelo de tu vehículo?" min="1960" max="2022" required>
+                    </div>
+                    <img class="logo-ch-vender" src="../assets/img/logo/carhouse-logo.png" alt="logo CarHouse">
+                </div>
+                <img class="aside-img" src="../assets/img/images/vender/car-aside-1.jpg" alt="imagen auto">
+            </section>
+            <section class="cat-section"> <!-- Categoria, Color y Descripcion -->
+                <div>
+                    <h2>2. Indica Categoría, Color  y de una Descripción del Vehículo</h2>
+                    <div class="sign-up-field">
+                        <h3>Categoría</h3>
+                        <select name="cat" id="">
+                            <option value="" selected disabled>Seleccione una Categoría</option>
+                            <option value="">Autos y Camionetas</option>
+                            <option value="">Motos</option>
+                            <option value="">Camiones</option>
+                        </select>
+                    </div>
+                    <div class="sign-up-field">
+                        <h3>Color</h3>
+                        <input type="text" name="color" placeholder="¿De qué color es tu vehículo?" autocomplete="off" required>
+                    </div>
+                    <div class="sign-up-field">
+                        <h3>Descripción</h3>
+                        <textarea name="description" id="" cols="30" rows="10" placeholder="Escriba una descripción de su vehículo" minlength="25" maxlength="2500" required></textarea>
+                    </div>
+                    <img class="logo-ch-vender" src="../assets/img/logo/carhouse-logo.png" alt="logo CarHouse">
+                </div>
+                <img class="aside-img" src="../assets/img/images/vender/car-aside-2.jpg" alt="imagen auto">
+            </section>
+            <section class="tec-section"> <!-- Datos Tecnicos -->
+                <div>
+                    <h2>3. Datos Técnicos del Vehículo</h2>
+                    <div class="sign-up-field">
+                        <h3>Kilometros</h3>
+                        <input type="number" name="kilometers" placeholder="¿Cuántos kilometros tiene tu vehículo?" min="0" required>
+                    </div>
+                    <div class="sign-up-field">
+                        <h3>Motor</h3>
+                        <input type="text" name="motor" placeholder="¿De qué tamaño es el motor de tu vehículo?" autocomplete="off" required>
+                    </div>
+                    <img class="logo-ch-vender" src="../assets/img/logo/carhouse-logo.png" alt="logo CarHouse">
+                </div>
+                <img class="aside-img" src="../assets/img/images/vender/car-aside-3.jpg" alt="imagen auto">
+            </section>
+            <section class="pictures-section"> <!-- Fotos -->
+                <div>
+                    <h2>4. Sube Fotos de Calidad del Vehículo</h2>
+                    <p>(Minimo 4 fotos, una por lado del vehículo)</p>
+                    <div class="upload-image-box">
+                        <input type="file" name="images" id="upload-image" accept="image/*" multiple>
+                        <label for="upload-image">
+                            <img src="../assets/img/icons/camara-fotografica.png" alt="Imagen de Camara">
+                            <p>Agregar Fotos</p>
+                        </label>
+                    </div>
+                    <img class="logo-ch-vender" src="../assets/img/logo/carhouse-logo.png" alt="logo CarHouse">
+                </div>
+                <img class="aside-img" src="../assets/img/images/vender/car-aside-4.jpg" alt="imagen auto">
+            </section>
+            <section class="location-section"> <!-- Ubicacion -->
+                <div>
+                    <h2>5. ¿Dónde se Encuentra el Vehículo?</h2>
+                    <div class="sign-up-field">
+                        <h3>Departamento</h3>
+                        <select name="departamento" id="">
+                            <option value="default" selected disabled>¿Dónde se encuentra el vehículo?</option>
+                            <option value="artigas">Artigas</option>
+                            <option value="canelones">Canelones</option>
+                            <option value="cerro largo">Cerro Largo</option>
+                            <option value="colonia">Colonia</option>
+                            <option value="durazno">Durazno</option>
+                            <option value="flores">Flores</option>
+                            <option value="florida">Florida</option>
+                            <option value="lavalleja">Lavalleja</option>
+                            <option value="maldonado">Maldonado</option>
+                            <option value="montevideo">Montevideo</option>
+                            <option value="paysandu">Paysandu</option>
+                            <option value="rio negro">Rio Negro</option>
+                            <option value="rivera">Rivera</option>
+                            <option value="rocha">Rocha</option>
+                            <option value="salto">Salto</option>
+                            <option value="san jose">San Jose</option>
+                            <option value="soriano">Soriano</option>
+                            <option value="tacuarembo">Tacuarembo</option>
+                            <option value="treinta y tres">Treinta y Tres</option>
+                        </select>
+                    </div>
+                    <div class="sign-up-field">
+                        <h3>Localidad</h3>
+                        <select name="localidad" id="">
+                            <option value="" selected disabled>¿En qué localidad esta el vehículo?</option>
+                            <option value="">Aguada</option>
+                            <option value="">Aires Puros</option>
+                            <option value="">Barra de Carrasco</option>
+                            <option value="">Barrio Sur</option>
+                            <option value="">Paso Molino</option>
+                            <option value="">Brazo Oriental</option>
+                            <option value="">Buceo</option>
+                            <option value="">Capurro</option>
+                            <option value="">Carrasco Norte</option>
+                            <option value="">Casabo</option>
+                            <option value="">Casavalle</option>
+                            <option value="">Centro</option>
+                            <option value="">Cerrito</option>
+                            <option value="">Ciudad Vieja</option>
+                            <option value="">Colon</option>
+                            <option value="">Conciliacion</option>
+                            <option value="">Cordon</option>
+                            <option value="">Flor de Maroñas</option>
+                            <option value="">Jacinto Vera</option>
+                            <option value="">Jardines del Hipodromo</option>
+                            <option value="">La Blanqueada</option>
+                        </select>
+                    </div>
+                    <img class="logo-ch-vender" src="../assets/img/logo/carhouse-logo.png" alt="logo CarHouse">
+                </div>
+                <img class="aside-img" src="../assets/img/images/vender/car-aside-6.jpg" alt="imagen auto">
+            </section>
+            <section class="end-section"> <!-- Finalizar Publicacion -->
+                <div>
+                    <h2>6. Finalizar Publicación</h2>
+                    <div class="sign-up-field">
+                        <h3>Nombre del Propietario</h3>
+                        <input type="text" name="owner" placeholder="¿A nombre de quién está el vehículo?" autocomplete="off" required>
+                    </div>
+                    <div class="sign-up-field">
+                        <h3>Precio</h3>
+                        <div class="field-price">
+                            <h4>USD</h4>
+                            <input type="number" name="price" min="1500" max="1000000" placeholder="¿Por cuánto quieres vender tu vehículo?" required>
+                        </div>
+                    </div>
+                    <img class="logo-ch-vender" src="../assets/img/logo/carhouse-logo.png" alt="logo CarHouse">
+                </div>
+                <img class="aside-img" src="../assets/img/images/vender/car-aside-5.jpg" alt="imagen auto">
+            </section>
+            <input class="btn-publish" type="submit" value="Finalizar Publicación">
+        </form>
+    </main>
+
+    <footer class="footer">
+        <hr>
+        <div class="footer-bar"> <!-- Barra Footer -->
+            <a href="../index.html"> <!-- Logo -->
+                <img src="../assets/img/logo/carhouse-logo.png" alt="logo CarHouse">
+            </a>
+            <div class="social-media"> <!-- Redes Footer -->
+                <ul>
+                    <li> <!-- Instagram -->
+                        <a class="social-media-item" href="#" target="_blank"><img src="../assets/img/icons/instagram-oscuro.png" alt="icono instagram" width="40" height="40"></a>
+                    </li>
+                    <li> <!-- Facebook -->
+                        <a class="social-media-item" href="#" target="_blank"><img src="../assets/img/icons/facebook-oscuro.png" alt="icono facebook" width="40" height="40"></a>
+                    </li>
+                    <li> <!-- Whatsapp -->
+                        <a class="social-media-item" href="#" target="_blank"><img src="../assets/img/icons/whatsapp-oscuro.png" alt="icono whatsapp" width="40" height="40"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-sections"> <!-- Secciones Footer -->
+            <section> <!-- Categorias -->
+                <h4>Categorias</h4>
+                <ul>
+                    <li><a href="../pages/comprar-home.html">Comprar</a></li>
+                    <li><a href="../pages/vender.html">Vender</a></li>
+                </ul>
+            </section>
+
+            <section> <!-- Nosotros -->
+                <h4>Nosotros</h4>
+                <ul>
+                    <li><a href="../pages/contactanos.html">Regístra tu Concesionaria</a></li>
+                    <li><a href="#">Información Legal</a></li>
+                    <li><a href="#">Politicas de Privacidad</a></li>
+                </ul>
+            </section>
+
+            <section class="section-footer-contacto"> <!-- Contactanos -->
+                <h4>Contáctanos</h4>
+                <ul>
+                    <li><a href="#"><img class="mail-icon" src="../assets/img/icons/email.png" alt="icono email" width="35" height="35"><span>info@CarHouse.com.uy</span></a></li>
+                    <li><a href="#"><img class="phone-icon" src="../assets/img/icons/phone-call.png" alt="icono phone-call" width="35" height="35"><span>0000 00 00</span></a></li>
+                </ul>
+            </section>
+        </div>
+        <h3>© 2021 CarHouse, Inc.</h3>
+    </footer>
+</body>
+</html>

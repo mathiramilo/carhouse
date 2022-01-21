@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CarHouse </title>
+    <link rel="shortcut icon" href="../assets/img/logo/icon-shortcut.png">
+
+    <script src="https://kit.fontawesome.com/de0eb60c48.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="sign-in-container">
+        <img class="sign-in-banner" src="../assets/img/images/sign-in-up/car-image.jpg" alt="imagen auto" width="100%" height="50%"> <!-- Parte de la Imagen -->
+
+        <main class="sign-in-content"> <!-- Parte del Formulario -->
+            <a href="../index.html"><img class="" src="../assets/img/logo/carhouse-logo.png" alt="logo CarHouse"></a>
+            <h1>Registrarse</h1>
+
+            <form class="sign-up-form"> <!-- Formulario Registro -->
+                <div class="sign-up-fields"> <!-- Campos -->
+                    <div class="sign-up-field">
+                        <h3 class="input-heading">Nombre Completo</h3>
+                        <input type="text" name="name" placeholder="Ingresa tu nombre y apellido" required>
+                    </div>
+                    <div class="sign-up-field birthdate-field">
+                        <h3 class="input-heading">Fecha de Nacimiento</h3>
+                        <input type="date" name="birthdate" placeholder="Ingresa tu fecha de nacimiento" required>
+                    </div>
+                    <div class="sign-up-field">
+                        <h3 class="input-heading">Email</h3>
+                        <input type="email" name="email" placeholder="Ingresa tu email" required>
+                    </div>
+                    <div class="sign-up-field">
+                        <h3 class="input-heading">Celular</h3>
+                        <input type="tel" name="phone" placeholder="Ingresa tu celular" required>
+                    </div>
+                    <div class="sign-up-field">
+                        <h3 class="input-heading">Contraseña</h3>
+                        <input type="password" name="password" placeholder="Ingresa tu contraseña" required>
+                    </div>
+                    <div class="sign-up-field">
+                        <h3 class="input-heading">Repite tu Contraseña</h3>
+                        <input type="password" name="password-repeat" placeholder="Repite tu contraseña" required>
+                    </div>
+                    <div class="sign-up-field">
+                        <h3 class="input-heading">Departamento</h3>
+                        <select name="departamento" id="">
+                            <option value="default" selected disabled>Seleccione un departamento</option>
+                            <option value="artigas">Artigas</option>
+                            <option value="canelones">Canelones</option>
+                            <option value="cerro largo">Cerro Largo</option>
+                            <option value="colonia">Colonia</option>
+                            <option value="durazno">Durazno</option>
+                            <option value="flores">Flores</option>
+                            <option value="florida">Florida</option>
+                            <option value="lavalleja">Lavalleja</option>
+                            <option value="maldonado">Maldonado</option>
+                            <option value="montevideo">Montevideo</option>
+                            <option value="paysandu">Paysandu</option>
+                            <option value="rio negro">Rio Negro</option>
+                            <option value="rivera">Rivera</option>
+                            <option value="rocha">Rocha</option>
+                            <option value="salto">Salto</option>
+                            <option value="san jose">San Jose</option>
+                            <option value="soriano">Soriano</option>
+                            <option value="tacuarembo">Tacuarembo</option>
+                            <option value="treinta y tres">Treinta y Tres</option>
+                        </select>
+                    </div>
+                    <div class="sign-up-field">
+                        <h3 class="input-heading">Localidad</h3>
+                        <select name="localidad" id="">
+                            <option value="" selected disabled>Seleccione una Localidad</option>
+                            <option value="">Aguada</option>
+                            <option value="">Aires Puros</option>
+                            <option value="">Barra de Carrasco</option>
+                            <option value="">Barrio Sur</option>
+                            <option value="">Paso Molino</option>
+                            <option value="">Brazo Oriental</option>
+                            <option value="">Buceo</option>
+                            <option value="">Capurro</option>
+                            <option value="">Carrasco Norte</option>
+                            <option value="">Casabo</option>
+                            <option value="">Casavalle</option>
+                            <option value="">Centro</option>
+                            <option value="">Cerrito</option>
+                            <option value="">Ciudad Vieja</option>
+                            <option value="">Colon</option>
+                            <option value="">Conciliacion</option>
+                            <option value="">Cordon</option>
+                            <option value="">Flor de Maroñas</option>
+                            <option value="">Jacinto Vera</option>
+                            <option value="">Jardines del Hipodromo</option>
+                            <option value="">La Blanqueada</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="sign-in-up"> <!-- Botones -->
+                    <input type="submit" value="Registrase">
+                    <div class="register-section"> <!-- Iniciar Sesion -->
+                        <a class="btn-register" href="./sign-in.html">Iniciar Sesión</a>
+                        <p>¿Ya tienes una cuenta?</p>
+                    </div>
+                </div>
+            </form>
+
+            <footer class="sign-in-footer sign-up-footer">
+                <hr>
+                <div>
+                    <h3>© 2021 CarHouse, Inc.</h3>
+                    <div class="social-media"> <!-- Redes Footer -->
+                        <ul>
+                            <li> <!-- Instagram -->
+                                <a href="#" target="_blank"><img src="../assets/img/icons/instagram-oscuro.png" alt="icono instagram" width="25" height="25"></a>
+                            </li>
+                            <li> <!-- Facebook -->
+                                <a href="#" target="_blank"><img src="../assets/img/icons/facebook-oscuro.png" alt="icono facebook" width="25" height="25"></a>
+                            </li>
+                            <li> <!-- Whatsapp -->
+                                <a href="#" target="_blank"><img src="../assets/img/icons/whatsapp-oscuro.png" alt="icono whatsapp" width="25" height="25"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>

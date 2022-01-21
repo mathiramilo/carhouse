@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CarHouse </title>
+    <link rel="shortcut icon" href="../assets/img/logo/icon-shortcut.png">
+
+    <script src="https://kit.fontawesome.com/de0eb60c48.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <section class="navbar"> <!-- Barra de Navegacion -->
+            <div class="container-1600">
+                <a class="logo" href="../index.html"> <!-- Logo -->
+                    <img src="../assets/img/logo/carhouse-logo.png" alt="logo CarHouse">
+                </a>
+        
+                <nav class="main-nav"> <!-- Navegacion -->
+                    <ul>
+                        <li>
+                            <a class="nav-link" href="../pages/comprar-home.html">Comprar</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="../pages/vender.html">Vender</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="../pages/concesionarias.html">Concesionarias</a>
+                        </li>
+                        <li>
+                            <a class="nav-link btn-ingresar" href="../pages/sign-in.html">Ingresar</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <form class="search-form"> <!-- Barra Busqueda -->
+                <input class="search-bar" type="search" placeholder="¿Qué auto estas buscando?">
+                <button class="search-btn"><img src="../assets/img/icons/magnifying-glass.png" alt="icono busqueda" width="25"></button>
+            </form>
+        </section>
+    </header>
+
+    <main class="main-car">
+        <div class="return-comprar">
+            <a class="btn-return-comprar" href="./comprar.html"><i class="fas fa-arrow-left"></i> <p>Atrás</p></a>
+        </div>
+
+        <section class="car-section">
+            <section class="car-img">
+                <img src="../assets/img/images/comprar/golf-gti.jpg" alt="Volkswagen Golf GTI">
+                <div class="car-secondary-images">
+                    <img src="../assets/img/images/car/vw-golf-costado.jpg" alt="Volkswagen Golf GTI costado">
+                    <img src="../assets/img/images/car/vw-golf-motor.png" alt="Motor Volkswagen Golf GTI">
+                    <img src="../assets/img/images/car/volkswagen-golf-gti-interior.jpg" alt="Interior Volkswagen Golf GTI">
+                </div>
+            </section>
+
+            <section class="car-info">
+                <div class="car-brand-model">
+                    <img src="../assets/img/images/comprar-home/volkswagen-logo.png" alt="Logo Volkswagen">
+                    <h3>Volkswagen Golf GTI</h3>
+                </div>
+                <div class="year-km">
+                    <p>Año: <span>2020</span></p>
+                    <p>Kilometros: <span>35.678</span></p>
+                </div>
+                <h4 class="car-price">Usd <span>32.590</span></h4>
+            </section>
+
+            <section class="car-technical-data">
+                <h3>Ficha Técnica:</h3>
+                <div class="technical-data">
+                    <p>Marca: <span>Volkswagen</span></p>
+                    <p>Modelo: <span>Golf GTI</span></p>
+                    <p>Año: <span>2020</span></p>
+                    <p>Kilometraje: <span>35.678</span></p>
+                    <p>Color: <span>Blanco</span></p>
+                    <p>Motor: <span>1.6</span> cc</p>
+                    <p>Transmición: <span>6</span> velocidades</p>
+                </div>
+            </section>
+
+            <section class="car-seller-info">
+                <h3>Información sobre el Vendedor</h3>
+                <div class="seller-info">
+                    <p>Nombre: <span>Nombre Apellido</span></p>
+                    <p>Email: <span>example@gmail.com</span></p>
+                    <p>Celular: <span>000 000 000</span></p>
+                </div>
+                <a class="btn-seller-contact" href="#">Contactar</a>
+            </section>
+
+            <section class="car-description">
+                <h3>Descripción</h3>
+                <p>Volkswagen Golf GTI del 2020 en excelentes condiciones, único dueño, no tiene ningun detalle, ningún rayón ni choque. Todos los services realizados en tiempo y forma.</p>
+            </section>
+
+            <section class="car-location">
+                <h3>Ubicación del Vehículo</h3>
+                <div class="location">
+                    <p>Departamento: <span>Montevideo</span></p>
+                    <p>Localidad: <span>Carrasco</span></p>
+                </div>
+            </section>
+
+            <section class="car-questions">
+                <div class="question">
+                    <form class="question-form">
+                        <h3>¿Quiéres Preguntarle algo al Vendedor?</h3>
+                        <textarea name="question" cols="30" rows="10" placeholder="Escribe tu Pregunta" minlength="5" maxlength="2500" required></textarea>
+                        <input class="btn-preguntar" type="submit" value="Preguntar">
+                    </form>
+                </div>
+                <div class="previous-questions">
+                    <h3>Preguntas Anteriores</h3>
+                    <div class="previous-question">
+                        <h4>¿Qué uso se le dio al auto?</h4>
+                        <div class="answer">
+                            <p>El mayor uso del auto fue en ciudad, para los viajes cotidianos, ya sea ir a trabajar, salir a comer, etc. Tiene unos viajes en ruta también. Saludos</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="similar-cars">
+            <h3>Vehículos Similares</h3>
+            <div class="list-similar-cars">
+                <a class="card-car" href="./car.html"> <!-- Card Auto -->
+                    <img src="../assets/img/images/comprar/nissan-kicks.jpg" alt="imagen auto nissan">
+                    <div class="info-car"> <!-- Datos Vehiculo -->
+                        <div class="car-brand">
+                            <img src="../assets/img/images/comprar-home/nissan-logo.png" alt="logo nissan" width="30">
+                            <h3>Nissan Kicks</h3>
+                        </div>
+                        <div class="car-data">
+                            <p>Año: 2021</p>
+                            <p>Kilometros: 23500</p>
+                            <p>USD 29700</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="card-car" href="./car.html"> <!-- Card Auto -->
+                    <img src="../assets/img/images/comprar/clio.jpg" alt="imagen auto renault">
+                    <div> <!-- Datos Vehiculo -->
+                        <div class="car-brand">
+                            <img src="../assets/img/images/comprar-home/renault-logo.png" alt="logo renault" width="50">
+                            <h3>Renault Clio</h3>
+                        </div>
+                        <div>
+                            <p>Año: 2018</p>
+                            <p>Kilometros: 46900</p>
+                            <p>USD 17600</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="card-car" href="./car.html"> <!-- Card Auto -->
+                    <img src="../assets/img/images/comprar/swift.jpg" alt="imagen auto suzuki">
+                    <div> <!-- Datos Vehiculo -->
+                        <div class="car-brand">
+                            <img src="../assets/img/images/comprar-home/suzuki_logo.png" alt="logo suzuki" width="30">
+                            <h3>Suzuki Swift</h3>
+                        </div>
+                        <div>
+                            <p>Año: 2017</p>
+                            <p>Kilometros: 90600</p>
+                            <p>USD 14600</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="card-car" href="./car.html"> <!-- Card Auto -->
+                    <img src="../assets/img/images/comprar/accent.jpg" alt="imagen auto hyundai">
+                    <div> <!-- Datos Vehiculo -->
+                        <div class="car-brand">
+                            <img src="../assets/img/images/comprar-home/hyundai-logo.png" alt="logo hyundai" width="40">
+                            <h3>Hyundai Accent</h3>
+                        </div>
+                        <div>
+                            <p>Año: 2018</p>
+                            <p>Kilometros: 108500</p>
+                            <p>USD 21800</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="left-arrow">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="right-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <hr>
+        <div class="footer-bar"> <!-- Barra Footer -->
+            <a href="../index.html"> <!-- Logo -->
+                <img src="../assets/img/logo/carhouse-logo.png" alt="logo CarHouse">
+            </a>
+            <div class="social-media"> <!-- Redes Footer -->
+                <ul>
+                    <li> <!-- Instagram -->
+                        <a class="social-media-item" href="#" target="_blank"><img src="../assets/img/icons/instagram-oscuro.png" alt="icono instagram" width="40" height="40"></a>
+                    </li>
+                    <li> <!-- Facebook -->
+                        <a class="social-media-item" href="#" target="_blank"><img src="../assets/img/icons/facebook-oscuro.png" alt="icono facebook" width="40" height="40"></a>
+                    </li>
+                    <li> <!-- Whatsapp -->
+                        <a class="social-media-item" href="#" target="_blank"><img src="../assets/img/icons/whatsapp-oscuro.png" alt="icono whatsapp" width="40" height="40"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-sections"> <!-- Secciones Footer -->
+            <section> <!-- Categorias -->
+                <h4>Categorias</h4>
+                <ul>
+                    <li><a href="../pages/comprar-home.html">Comprar</a></li>
+                    <li><a href="../pages/vender.html">Vender</a></li>
+                </ul>
+            </section>
+
+            <section> <!-- Nosotros -->
+                <h4>Nosotros</h4>
+                <ul>
+                    <li><a href="../pages/contactanos.html">Regístra tu Concesionaria</a></li>
+                    <li><a href="#">Información Legal</a></li>
+                    <li><a href="#">Politicas de Privacidad</a></li>
+                </ul>
+            </section>
+
+            <section class="section-footer-contacto"> <!-- Contactanos -->
+                <h4>Contáctanos</h4>
+                <ul>
+                    <li><a href="#"><img class="mail-icon" src="../assets/img/icons/email.png" alt="icono email" width="35" height="35"><span>info@CarHouse.com.uy</span></a></li>
+                    <li><a href="#"><img class="phone-icon" src="../assets/img/icons/phone-call.png" alt="icono phone-call" width="35" height="35"><span>0000 00 00</span></a></li>
+                </ul>
+            </section>
+        </div>
+        <h3>© 2021 CarHouse, Inc.</h3>
+    </footer>
+</body>
+</html>
