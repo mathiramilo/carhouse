@@ -3410,7 +3410,7 @@ img {
 
 .layout-user {
     display: grid;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 75px auto;
 }
 
 .user-aside {
@@ -3488,14 +3488,14 @@ img {
 
 .user {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 1rem;
     margin-top: 3rem;
 }
 
 .user img:first-child {
-    width: 35px;
+    width: 30px;
 }
 
 .user img:last-child {
@@ -3504,7 +3504,7 @@ img {
 
 .user p {
     font-size: 1.8rem;
-    font-weight: 400;
+    font-weight: 500;
     color: var(--soft-black);
 }
 
@@ -3686,8 +3686,8 @@ img {
 }
 
 .publication-brand h3 {
-    font-size: 1.4rem;
-    font-weight: 400;
+    font-size: 1.6rem;
+    font-weight: 500;
 }
 
 .publication h4 {
@@ -3753,4 +3753,148 @@ img {
 
 .favs-see-all a:hover {
     background-color: #383838;
+}
+
+@media (min-width: 625px) {
+    .favs-cars {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .publication {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (min-width: 815px) {
+    .user-info {
+        display: grid;
+        grid-template-areas: "img-name btn-my-data"
+                             "data location";
+        align-items: center;
+        row-gap: 2rem;
+    }
+
+    .user-img-name {
+        grid-area: img-name;
+    }
+
+    .button-my-data {
+        grid-area: btn-my-data;
+        margin-top: -3rem;
+    }
+
+    .user-data {
+        grid-area: data;
+    }
+
+    .user-location {
+        grid-area: location;
+    }
+
+    .publication {
+        padding: 2rem;
+    }
+
+    .publication > div {
+        gap: 2rem;
+    }
+
+    .publication > div > img {
+        width: 70px;
+        height: 60px;
+    }
+
+    .publication-brand img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .publication-brand h3 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .layout-user {
+        grid-template-columns: 220px auto;
+    }
+    
+    .user-info {
+        max-width: 750px;
+    }
+
+    .my-account a, .my-account span,
+    .purchases a, .purchases span,
+    .sales a, .sales span,
+    .settings a, .settings span {
+        display: block;
+    }
+
+    .user-aside-navbar {
+        width: 90%;
+    }
+
+    .aside-navbar > div {
+        margin-bottom: 2rem;
+    }
+
+    .my-account h3,
+    .purchases h3,
+    .sales h3,
+    .settings h3 {
+        display: flex;
+        align-items: baseline;
+        gap: 1rem;
+        justify-content: flex-start;
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+        margin-left: 2rem;
+    }
+
+    .my-account div,
+    .purchases div,
+    .sales div,
+    .settings div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 200px;
+        margin-left: 4.8rem;
+        gap: 0.8rem;
+    }
+
+    .my-account a,
+    .purchases a,
+    .sales a,
+    .settings a {
+        color: #d4d4d4;
+        font-size: 1.5rem;
+        font-weight: 300;
+        transition: all 0.3s ease;
+    }
+
+    .my-account a:hover,
+    .purchases a:hover,
+    .sales a:hover,
+    .settings a:hover {
+        color: var(--main-blue);
+    }
+}
+
+@media (min-width: 1200px) {
+    .favs-cars {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+/* User Navbar Tablet */
+@media (min-width: 583px) and (max-width: 991px) {
+    .user {
+        margin-top: 0;
+    }
 }

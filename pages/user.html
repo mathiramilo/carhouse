@@ -19,43 +19,64 @@
                 <div class="aside-navbar">
                     <div class="my-account">
                         <h3><i class="fas fa-bars"></i> <span>Mi Cuenta</span></h3>
-                        <a href="#">Resumen</a>
-                        <a href="#">Mis Datos</a>
+                        <div>
+                            <a href="#">Resumen</a>
+                            <a href="#">Mis Datos</a>
+                        </div>
                     </div>
                     <div class="purchases">
                         <h3><i class="fas fa-shopping-bag"></i> <span>Compras</span></h3>
-                        <a href="#">Favoritos</a>
-                        <a href="#">Preguntas</a>
+                        <div>
+                            <a href="#">Favoritos</a>
+                            <a href="#">Preguntas</a>
+                        </div>
                     </div>
                     <div class="sales">
                         <h3><i class="fas fa-bullhorn"></i> <span>Ventas</span></h3>
-                        <a href="#">Mis Publicaciones</a>
-                        <a href="#">Preguntas</a>
-                        <a href="#">Ventas</a>
+                        <div>
+                            <a href="#">Mis Publicaciones</a>
+                            <a href="#">Preguntas</a>
+                            <a href="#">Ventas</a>
+                        </div>
                     </div>
                     <div class="settings">
                         <h3><i class="fas fa-cog"></i> <span>Configuración</span></h3>
-                        <a href="#">Seguridad</a>
+                        <div>
+                            <a href="#">Seguridad</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </aside>
 
         <main>
-            <header class="user-header">
-                <div class="navbar-user">
-                    <a href="../index.html" class="logo"><img src="../assets/img/logo/carhouse-logo.png" alt="Logo CarHouse"></a>
-                    <div class="navbar-user-links">
-                        <a href="../pages/comprar-home.html">Comprar</a>
-                        <a href="../pages/vender.html">Vender</a>
-                        <a href="../pages/concesionarias.html">Concesionarias</a>
+            <header>
+                <section class="navbar"> <!-- Barra de Navegacion -->
+                    <div class="container-1600">
+                        <a class="logo" href="../index.html"> <!-- Logo -->
+                            <img src="../assets/img/logo/carhouse-logo.png" alt="logo CarHouse">
+                        </a>
+                
+                        <nav class="main-nav"> <!-- Navegacion -->
+                            <ul>
+                                <li>
+                                    <a class="nav-link" href="../pages/comprar-home.html">Comprar</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="../pages/vender.html">Vender</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="../pages/concesionarias.html">Concesionarias</a>
+                                </li>
+                                <li class="user">
+                                    <img src="../assets/img/images/user/usuario-de-perfil.png" alt="Usuario">
+                                    <p>Nombre Apellido</p>
+                                    <img src="../assets/img/icons/flecha-hacia-abajo.png" alt="Flecha Hacia Abajo">
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
-                    <div class="user">
-                        <img src="../assets/img/images/user/usuario-de-perfil.png" alt="Usuario">
-                        <p>Nombre Apellido</p>
-                        <img src="../assets/img/icons/flecha-hacia-abajo.png" alt="Flecha Hacia Abajo">
-                    </div>
-                </div>
+                </section>
             </header>
 
             <div class="user-resume-container">
