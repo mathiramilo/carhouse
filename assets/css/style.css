@@ -242,11 +242,19 @@ img {
     width: 100%;
     max-height: 30rem;
     object-fit: cover;
+    animation: showImageOpacity 2s;
+}
+
+@keyframes showImageOpacity {
+    from {
+        opacity: 0%;
+    }
 }
 
 .banner-content {
     color: var(--white);
     padding: 3rem 3rem 4rem 3rem;
+    animation: appearFromLeft 2s -0.8s;
 }
 
 .banner-content h1 {
@@ -313,12 +321,62 @@ img {
         padding-left: 19rem;
         transform: scale(1.1);
     }
+
+    .banner {
+        height: 78vh;
+    }
 }
 
 /* --- MAIN --- */
 .main-content {
     max-width: 90%;
     margin: auto;
+}
+
+.main-content:target .section-vender > img {
+    animation: appearLeftOpacity 1s;
+}
+
+.main-content:target .section-vender > div {
+    animation: appearRightOpacity 1s;
+}
+
+.main-content:target .section-comprar > img {
+    animation: appearRightOpacity 1s;
+}
+
+.main-content:target .section-comprar > div {
+    animation: appearLeftOpacity 1s;
+}
+
+.main-content:target .section-concesionarias > img {
+    animation: appearLeftOpacity 1s;
+}
+
+.main-content:target .section-concesionarias > div {
+    animation: appearRightOpacity 1s;
+}
+
+.main-content:target .section-contacto > img {
+    animation: appearLeftOpacity 1s;
+}
+
+.main-content:target .section-contacto > div {
+    animation: appearRightOpacity 1s;
+}
+
+@keyframes appearLeftOpacity {
+    from {
+        opacity: 0;
+        transform: translateX(-50rem);
+    }
+}
+
+@keyframes appearRightOpacity {
+    from {
+        opacity: 0;
+        transform: translateX(50rem);
+    }
 }
 
 .main-content h2 {

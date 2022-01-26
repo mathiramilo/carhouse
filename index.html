@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> CarHouse </title>
     <link rel="shortcut icon" href="./assets/img/logo/icon-shortcut.png">
-
+    <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/de0eb60c48.js" crossorigin="anonymous"></script>
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -52,24 +54,24 @@
         <p>Todo lo relacionado al mundo de los vehículos se encuentra aquí</p>
 
         <section class="section-vender">
-            <img src="./assets/img/images/landing-page/Businessman _Monochromatic 1.png" alt="imagen Businessman" width="50%">
-            <div>
+            <img data-aos="fade-right" data-aos-duration="1500" src="./assets/img/images/landing-page/Businessman _Monochromatic 1.png" alt="imagen Businessman" width="50%">
+            <div data-aos="fade-left" data-aos-duration="1500">
                 <h3>Vende tu Auto de forma <br><b>Rápida y Segura</b></h3>
                 <a class="btn-vender" href="./pages/vender.html">Vender</a> <!-- Boton Vender -->
             </div>
         </section> 
         
         <section class="section-comprar">
-            <img src="./assets/img/images/landing-page/auto-verde.jpg" alt="imagen auto verde" width="50%">
-            <div>
+            <img data-aos="fade-left" data-aos-duration="1500" src="./assets/img/images/landing-page/auto-verde.jpg" alt="imagen auto verde" width="50%">
+            <div data-aos="fade-right" data-aos-duration="1500">
                 <h3>Encuentra el Auto de tus <br><b>Sueños</b></h3>
                 <a class="btn-comprar" href="./pages/comprar-home.html">Comprar</a> <!-- Boton Comprar -->
             </div>
         </section>
 
         <section class="section-concesionarias">
-            <img src="./assets/img/images/landing-page/auto-rojo.jpg" alt="imagen auto rojo" width="50%">
-            <div>
+            <img data-aos="fade-right" data-aos-duration="1500" src="./assets/img/images/landing-page/auto-rojo.jpg" alt="imagen auto rojo" width="50%">
+            <div data-aos="fade-left" data-aos-duration="1500">
                 <h3>Las Concesionarias mas <br><b>Reconocidas del País</b> se <br>encuentran aquí</h3>
                 <h3>Compra tu <b>Nuevo Auto 0 km</b></h3>
                 <a class="btn-concesionarias" href="./pages/concesionarias.html">Ir a Concesionarias</a>
@@ -82,8 +84,8 @@
         <p>Puedes registrar tu concesionaria de forma gratuita para que los usuarios de CarHouse accedan a tus coches</p>
 
         <section class="section-contacto">
-            <img src="./assets/img/images/landing-page/Businessman _Isometric 1.png" alt="imagen contacto" width="50%">
-            <div>
+            <img data-aos="fade-right" data-aos-duration="1500" src="./assets/img/images/landing-page/Businessman _Isometric 1.png" alt="imagen contacto" width="50%">
+            <div data-aos="fade-left" data-aos-duration="1500">
                 <h3>Regístra tu <b>Concesionaria</b><br>en la Plataforma</h3>
                 <a class="btn-contacto" href="./pages/contactanos.html">Contáctanos</a>
             </div>
@@ -139,5 +141,11 @@
         </div>
         <h3>© 2021 CarHouse, Inc.</h3>
     </footer>
+
+    <!-- AOS (Animate On Scroll) -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
