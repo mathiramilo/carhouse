@@ -1,2 +1,2 @@
 # CarHouse
-Website where you can buy or sell cars
+CarHouse is a website where you can buy or sell used or new cars
