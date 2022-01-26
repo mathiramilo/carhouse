@@ -967,6 +967,7 @@ img {
     align-items: center;
     text-align: center;
     font-size: 1.5rem;
+    color: var(--soft-black);
 }
 
 .cat-card:hover {
@@ -999,10 +1000,6 @@ img {
     font-weight: 300;
     font-size: 1.4rem;
     transition: all 0.05s ease;
-}
-
-.categories .cat-card:first-child {
-    margin-top: 1.5rem;
 }
 
 /* Section Concesionarias */
