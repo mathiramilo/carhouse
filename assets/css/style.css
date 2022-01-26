@@ -1503,6 +1503,11 @@ img {
 
 .sign-in-form {
     margin: 2rem 0;
+    overflow: hidden;
+}
+
+.sign-in-fields {
+    animation: appearFromLeft 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .sign-in-fields > h3 {
@@ -1753,12 +1758,14 @@ img {
 .sign-up-form {
     width: 100%;
     max-width: 900px;
+    overflow: hidden;
 }
 
 .sign-up-fields {
     width: 100%;
     max-width: 900px;
     margin-bottom: 3rem;
+    animation: appearFromLeft 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .sign-up-field {
