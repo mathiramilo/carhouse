@@ -83,6 +83,10 @@ input {
     font-family: var(--main-font);
 }
 
+select {
+    font-family: var(--main-font);
+}
+
 /* Cursor pointer for Submit buttons and selects */
 input[type=submit]:hover,
 input[type=file]:hover,
