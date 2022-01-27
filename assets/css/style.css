@@ -2889,10 +2889,12 @@ img {
 .form-section {
     width: 80%;
     margin: 3rem auto 1rem auto;
+    overflow: hidden;
 }
 
-.contact-form {
-    width: 90%
+.contact-form > .sign-up-field {
+    width: 90%;
+    animation: appearFromLeft 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .btn-enviar {
@@ -2979,18 +2981,21 @@ img {
     margin: 4rem auto;
     padding: 2rem 4rem;
     border-radius: 20px;
+    overflow: hidden;
 }
 
 .section-financing-info h2 {
     margin-bottom: 2rem;
     font-weight: 500;
     font-size: 2.4rem;
+    animation: scale 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .section-financing-info p {
     margin-bottom: 4rem;
     font-weight: 300;
     font-size: 1.6rem;
+    animation: appearFromLeft 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .section-financing-info img {
