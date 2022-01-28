@@ -81,6 +81,7 @@ textarea {
 /* Setting the font for the inputs */
 input {
     font-family: var(--main-font);
+    -webkit-appearance: none;
 }
 
 select {
