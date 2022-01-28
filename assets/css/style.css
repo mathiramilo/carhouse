@@ -82,6 +82,8 @@ textarea {
 input {
     font-family: var(--main-font);
     -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 select {
