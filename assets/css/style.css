@@ -830,6 +830,15 @@ img {
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+    /* animation: scaleOpacity 0.5s; Disabled because of bad performance*/ 
+}
+
+/* Scale from 0 - 1 & Opacity from 0 - 1 */
+@keyframes scaleOpacity {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
 }
 
 .brand-card > div {
@@ -2249,6 +2258,7 @@ img {
     text-align: left;
     color: var(--white);
     position: relative;
+    overflow: hidden;
 }
 
 .contact-concessionaire::before {
@@ -2311,6 +2321,7 @@ img {
     text-align: left;
     color: var(--white);
     position: relative;
+    overflow: hidden;
 }
 
 .info-concessionaire::before {
