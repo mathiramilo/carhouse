@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> CarHouse </title>
     <link rel="shortcut icon" href="../assets/img/logo/icon-shortcut.png">
-
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/de0eb60c48.js" crossorigin="anonymous"></script>
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
@@ -162,19 +164,19 @@
         <h2>Vehículos que Podrian Interesarte</h2>
         <section class="car-types-section">
             <div class="car-types">
-                <a href="./comprar.html" class="vehicle-card vehicle-card-hatchbacks"> <!-- Card Vehiculo -->
+                <a href="./comprar.html" class="vehicle-card vehicle-card-hatchbacks" data-aos="zoom-in"> <!-- Card Vehiculo -->
                     <img src="../assets/img/images/comprar-home/vw-golf-hatchback.jpg" alt="imagen auto" width="75%">
                     <p>Hatchbacks</p>
                 </a>
-                <a href="./comprar.html" class="vehicle-card vehicle-card-sedanes"> <!-- Card Vehiculo -->
+                <a href="./comprar.html" class="vehicle-card vehicle-card-sedanes" data-aos="zoom-in"> <!-- Card Vehiculo -->
                     <img src="../assets/img/images/comprar-home/bmw-sedan.png" alt="imagen auto" width="75%">
                     <p>Sedanes</p>
                 </a>
-                <a href="./comprar.html" class="vehicle-card vehicle-card-suvs"> <!-- Card Vehiculo -->
+                <a href="./comprar.html" class="vehicle-card vehicle-card-suvs" data-aos="zoom-in"> <!-- Card Vehiculo -->
                     <img src="../assets/img/images/comprar-home/mb-suv.jpg" alt="imagen auto" width="75%">
                     <p>SUVS</p>
                 </a>
-                <a href="./comprar.html" class="vehicle-card vehicle-card-camionetas"> <!-- Card Vehiculo -->
+                <a href="./comprar.html" class="vehicle-card vehicle-card-camionetas" data-aos="zoom-in"> <!-- Card Vehiculo -->
                     <img src="../assets/img/images/comprar-home/raptor-camioneta.jpg" alt="imagen auto" width="75%">
                     <p>Camionetas</p>
                 </a>
@@ -184,19 +186,19 @@
         <section class="categories-section">
             <h2>Nuestras Categorías</h2>
             <div class="categories">
-                <a href="./comprar.html" class="cat-card"> <!-- Card Categoria -->
+                <a href="./comprar.html" class="cat-card" data-aos="zoom-in"> <!-- Card Categoria -->
                     <div>
                         <img src="../assets/img/images/comprar-home/auto-cat.png" alt="imagen auto" width="80%">
                     </div>
                     <p>Autos y Camionetas</p>
                 </a>
-                <a href="./comprar.html" class="cat-card"> <!-- Card Categoria -->
+                <a href="./comprar.html" class="cat-card" data-aos="zoom-in"> <!-- Card Categoria -->
                     <div>
                         <img src="../assets/img/images/comprar-home/moto-cat.png" alt="imagen moto" width="80%">
                     </div>
                     <p>Motos</p>
                 </a>
-                <a href="./comprar.html" class="cat-card"> <!-- Card Categoria -->
+                <a href="./comprar.html" class="cat-card" data-aos="zoom-in"> <!-- Card Categoria -->
                     <div>
                         <img src="../assets/img/images/comprar-home/camion-cat.png" alt="imagen camion" width="80%">
                     </div>
@@ -274,5 +276,11 @@
         </div>
         <h3>© 2021 CarHouse, Inc.</h3>
     </footer>
+
+    <!-- AOS (Animate On Scroll) -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
