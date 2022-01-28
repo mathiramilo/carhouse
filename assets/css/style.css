@@ -239,6 +239,7 @@ img {
 /* Banner */
 .banner {
     background-color: var(--soft-black);
+    overflow: hidden;
 }
 
 .banner-img {
@@ -334,6 +335,7 @@ img {
 .main-content {
     max-width: 90%;
     margin: auto;
+    overflow: hidden;
 }
 
 .main-content:target .section-vender > img {
