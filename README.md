@@ -11,7 +11,7 @@ Final Project of Coderhouse Web Development Course
 * **SASS**
 * **JavaScript**
 ### Framework
-* **Bootstrap**
+* **No Framework**
 ### Libraries
 * **Font Awesome**
 * **AOS (Animate On Scroll)**
