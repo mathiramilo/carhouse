@@ -26,6 +26,7 @@
     --soft-green: #2CD082;
     --soft-red: #FF4A4A;
     --mustard: #FFB627;
+    --violet: #6c63ff;
 
     /* Sign-in - Sign-up Colors */
     --soft-violet: #A655C7;
@@ -496,6 +497,18 @@ img {
 
 .section-contacto b {
     color: var(--mustard);
+}
+
+.section-perfil b {
+    color: var(--violet);
+}
+
+.section-perfil a {
+    background-color: var(--violet);
+}
+
+.section-perfil a:hover {
+    background-color: #7f79ff;
 }
 
 @media (min-width: 584px) {
