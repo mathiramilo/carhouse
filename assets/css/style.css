@@ -80,7 +80,7 @@ textarea {
 }
 
 /* Setting the font for the inputs */
-input {
+input[type=submit] {
     font-family: var(--main-font);
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -480,7 +480,7 @@ img {
 }
 
 .section-concesionarias {
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
 }
 
 .section-concesionarias b {
@@ -492,7 +492,7 @@ img {
 }
 
 .section-contacto {
-    margin-bottom: 6rem;
+    margin-bottom: 10rem;
 }
 
 .section-contacto b {
@@ -635,11 +635,13 @@ img {
 
     .section-concesionarias {
         margin-top: 8rem;
+        margin-bottom: 15rem;
         gap: 10rem;
     }
 
     .section-contacto {
         margin-top: 8rem;
+        margin-bottom: 15rem;
         gap: 10rem;
     }
 }
