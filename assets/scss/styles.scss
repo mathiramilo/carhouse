@@ -1,12 +1,22 @@
-// Header Styles
-header {
-    background-color: #fff;
+// Base
+@import './base/variables';
+@import './base/globals';
+@import './base/mixins';
+@import './base/reset';
 
-    .test {
-        color: #fff;
-    }
+// Layout
+@import './layout/header';
+@import './layout/footer';
 
-    &:hover {
-        color: #000;
-    }
-}
+//Pages
+@import './pages/landing-page';
+@import './pages/vender';
+@import './pages/comprar-home';
+@import './pages/comprar';
+@import './pages/sign-in';
+@import './pages/sign-up';
+@import './pages/user';
+@import './pages/car';
+@import './pages/concesionarias';
+@import './pages/financiamiento';
+@import './pages/contacto';
