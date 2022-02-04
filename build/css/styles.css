@@ -1,0 +1,6 @@
+header {
+  background-color: #fff; }
+  header .test {
+    color: #fff; }
+  header:hover {
+    color: #000; }

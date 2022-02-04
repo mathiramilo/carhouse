@@ -1,0 +1,26 @@
+{
+  "name": "carhouse-ramilo",
+  "version": "1.0.0",
+  "description": "CarHouse is a website for buying and selling vehicles. In it you can search among a large number of used vehicles published by other users as well as publish your vehicle for sale. You can also search for vehicles 0 km offered by the wide variety of dealerships found here. If you have a dealership you can register it on the site as well.\r ## Information\r Final Project of Coderhouse Web Development Course\r * **Developed by: Mathias Ramilo**\r * **Website:** https://mathiramilo.github.io/CarHouse-Ramilo/\r ## Tools\r ### Languages\r * **HTML5**\r * **CSS3**\r * **SASS**\r * **JavaScript**\r ### Framework\r * **No Framework**\r ### Libraries\r * **Font Awesome**\r * **AOS (Animate On Scroll)**\r ### Others\r * \r ## Contact\r * **GitHub:** https://github.com/mathiramilo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+
+    "build-css": "node-sass --include-path scss assets/scss/styles.scss build/css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathiramilo/CarHouse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mathiramilo/CarHouse/issues"
+  },
+  "homepage": "https://github.com/mathiramilo/CarHouse#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}

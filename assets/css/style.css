@@ -16,6 +16,9 @@
     --gray: #939393;
     --soft-gray: #D7D7D7;
 
+    --translucid-white: #ffffffe1;
+    --translucid-white-hover: #ffffff85;
+
     /* Gradients */
     --black-linear-gradient: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 
@@ -80,8 +83,12 @@ textarea {
 }
 
 /* Setting the font for the inputs */
-input[type=submit] {
+input {
     font-family: var(--main-font);
+}
+
+/* Reset Input type Submit */
+input[type=submit] {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -1681,6 +1688,20 @@ img {
 
 .sign-in-footer > div > .social-media {
     margin: 0;
+}
+
+.btn-volver-siu {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    font-size: 3.6rem;
+    color: var(--translucid-white);
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.btn-volver-siu:hover {
+    color: var(--translucid-white-hover);
 }
 
 @media (max-width: 480px) {

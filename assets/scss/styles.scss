@@ -1,0 +1,12 @@
+// Header Styles
+header {
+    background-color: #fff;
+
+    .test {
+        color: #fff;
+    }
+
+    &:hover {
+        color: #000;
+    }
+}
