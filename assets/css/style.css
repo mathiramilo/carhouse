@@ -130,7 +130,7 @@ img {
 
 
 
-/* --------------- LANDING PAGE ----------------------- */
+/* ------------------ LANDING PAGE ----------------------- */
 
 
 
@@ -143,8 +143,34 @@ img {
     box-shadow: 0px 0px 12px -6px rgba(0, 0, 0, 0.25);
 }
 
+.navbar .container-1600 div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.hamburguer {
+    font-size: 2.8rem;
+    color: var(--soft-black);
+    transition: all 0.3s ease;
+}
+
+.hamburguer:hover {
+    color: var(--soft-black-hover);
+    cursor: pointer;
+}
+
 .main-nav {
     margin-top: 2.8rem;
+    display: none;
+}
+
+/* Animation - Opacity 0-1 */
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
 }
 
 .main-nav ul li {
@@ -179,8 +205,19 @@ img {
 }
 
 @media (min-width: 583px) and (max-width: 991px) {
+    .hamburguer {
+        display: none;
+    }
+
+    .navbar .container-1600 div {
+        display: block;
+        padding: 0;
+    }
+
     .main-nav {
         margin-top: 4rem;
+        display: block;
+        transform: none;
     }
 
     .main-nav ul {
@@ -204,8 +241,19 @@ img {
 }
 
 @media (min-width: 992px) {
+    .hamburguer {
+        display: none;
+    }
+
+    .navbar .container-1600 div {
+        display: block;
+        padding: 0;
+    }
+
     .main-nav {
         margin: 0;
+        display: block;
+        transform: none;
     }
 
     .navbar > .container-1600 {
@@ -1694,7 +1742,7 @@ img {
     position: absolute;
     top: 2rem;
     left: 2rem;
-    font-size: 3.6rem;
+    font-size: 3rem;
     color: var(--translucid-white);
     font-weight: 400;
     transition: all 0.3s ease;

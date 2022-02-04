@@ -53,11 +53,15 @@
             <header>
                 <section class="navbar"> <!-- Barra de Navegacion -->
                     <div class="container-1600">
-                        <a class="logo" href="../index.html"> <!-- Logo -->
-                            <img src="../assets/img/logo/carhouse-logo.png" alt="logo CarHouse">
-                        </a>
+                        <div>
+                            <a class="logo" href="../index.html"> <!-- Logo -->
+                                <img src="../assets/img/logo/carhouse-logo.png" alt="logo CarHouse">
+                            </a>
+            
+                            <a id="hamburguer" class="hamburguer"><i class="fas fa-bars"></i></a>
+                        </div>
                 
-                        <nav class="main-nav"> <!-- Navegacion -->
+                        <nav id="main-nav" class="main-nav"> <!-- Navegacion -->
                             <ul>
                                 <li>
                                     <a class="nav-link" href="../pages/comprar-home.html">Comprar</a>
@@ -68,10 +72,8 @@
                                 <li>
                                     <a class="nav-link" href="../pages/concesionarias.html">Concesionarias</a>
                                 </li>
-                                <li class="user">
-                                    <img src="../assets/img/images/user/usuario-de-perfil.png" alt="Usuario">
-                                    <p>Nombre Apellido</p>
-                                    <img src="../assets/img/icons/flecha-hacia-abajo.png" alt="Flecha Hacia Abajo">
+                                <li>
+                                    <a class="nav-link btn-ingresar" href="../pages/sign-in.html">Ingresar</a>
                                 </li>
                             </ul>
                         </nav>
@@ -256,5 +258,8 @@
             </footer>
         </main>
     </div>
+
+    <!-- My Javascript -->
+    <script src="../assets/js/app.js"></script>
 </body>
 </html>
