@@ -786,6 +786,29 @@ img {
     margin-bottom: 1rem;
 }
 
+.developed-by {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.developed-by h6 {
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: var(--soft-black-hover);
+}
+
+.developed-by a {
+    color: var(--soft-black);
+    transition: all 0.3s ease;
+}
+
+.developed-by a:hover {
+    color: var(--main-blue);
+}
+
 @media (min-width: 992px) {
     .footer-bar {
         display: flex;

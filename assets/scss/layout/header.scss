@@ -1,0 +1,157 @@
+// --- HEADER ---
+
+// Navigation Bar 
+.navbar {
+    text-align: center;
+    padding: 3rem 0 2.5rem 0;
+    box-shadow: 0px 0px 12px -6px rgba(0, 0, 0, 0.25);
+
+    .container-1600 div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+    }
+}
+
+.hamburguer {
+    font-size: 2.8rem;
+    color: $soft-black;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: $soft-black-hover;
+        cursor: pointer;
+    }
+}
+
+.main-nav {
+    margin-top: 2.8rem;
+    display: none;
+
+    ul li {
+        margin-bottom: 1rem;
+    }
+
+    ul li:nth-child(3) {
+        margin-bottom: 3rem;
+    }   
+}
+
+/* Animation - Opacity 0-1 */
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+}
+
+.nav-link {
+    color: $soft-black;
+    font-size: 1.8rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: $main-blue;
+    }
+}
+
+.btn-ingresar {
+    color: $main-blue;
+    border: solid 3px $main-blue;
+    border-radius: 50px;
+    padding: 8px 50px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: $white;
+        background-color: $main-blue;
+    }
+}
+
+@media (min-width: 583px) and (max-width: 991px) {
+    .hamburguer {
+        display: none;
+    }
+
+    .navbar .container-1600 div {
+        display: block;
+        padding: 0;
+    }
+
+    .main-nav {
+        margin-top: 4rem;
+        display: block;
+        transform: none;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5%;
+
+            li {
+                margin-bottom: 0;
+
+                &:nth-child(3) {
+                    margin-bottom: 0;
+                }
+
+                &:nth-child(4) {
+                    margin-left: 2rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .hamburguer {
+        display: none;
+    }
+
+    .navbar .container-1600 div {
+        display: block;
+        padding: 0;
+    }
+
+    .main-nav {
+        margin: 0;
+        display: block;
+        transform: none;
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+
+            li {
+                margin: 0;
+
+                &:nth-child(3) {
+                    margin-bottom: 0;
+                }
+
+                &:nth-child(4) {
+                    margin-left: 2rem;
+                }
+            }
+        }
+    }
+
+    .navbar > .container-1600 {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-nav ul {
+        gap: 6rem;
+
+        li:nth-child(4) {
+            margin-left: 4rem;
+        }
+    }
+}

@@ -1,0 +1,448 @@
+// ------------- COMPRAR-HOME --------------- 
+
+// Banner 
+.banner-comprar-home {
+    background-image: url(../../assets/img/images/comprar-home/comprar-wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 4rem 3rem 6rem 3rem;
+
+    h1 {
+        color: $white;
+        font-weight: 400;
+
+        b {
+            font-weight: 500;
+        }
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+.main-comprar-home {
+    max-width: 85%;
+    margin: 3rem auto;
+
+    h2 {
+        text-align: center;
+        font-weight: 300;
+        font-size: 2.2rem;
+        margin: 4rem auto 3rem auto;
+        color: $soft-black;
+    }
+}
+
+@media (min-width: 812px) {
+    .banner-comprar-home {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 30vh;
+        padding-left: 4rem;
+
+        form {
+            width: 50%;
+            margin: 1.5rem 0 0 8rem;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .banner-comprar-home {
+        padding-left: 6%;
+    }
+}
+
+@media (min-width: 1900px) {
+    .banner-comprar-home {
+        padding-left: 16rem;
+    }
+}
+
+// Main Brands 
+.main-brands {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 10rem;
+    margin-top: 3rem;
+}
+
+.brand-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    // animation: scaleOpacity 0.5s; Disabled because of bad performance
+}
+
+// Scale from 0 - 1 & Opacity from 0 - 1 
+@keyframes scaleOpacity {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+.brand-card > div {
+    background-color: #F8F8F8;
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+    border: 2px solid #F1F1F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.brand-card > p {
+    transition: all 0.05s ease;
+}
+
+.brand-card:hover > div {
+    box-shadow: 0 0 25px -10px rgba(0, 0, 0, 0.25);
+}
+
+.brand-card:hover > p {
+    font-weight: 400;
+}
+
+.brand-card:hover {
+    cursor: pointer;
+}
+
+.brand-card > div > img {
+    width: 50%;
+}
+
+.brand-card > p {
+    margin-top: 1rem;
+    font-weight: 300;
+    font-size: 1.4rem;
+    color: $soft-black;
+}
+
+@media (min-width: 812px) {
+    .main-brands {
+        grid-template-columns: repeat(6, 1fr);
+        margin-top: 6rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .main-brands {
+        grid-template-columns: repeat(9, 1fr);
+    }
+}
+
+// Vehicle Types 
+.car-types-section {
+    width: 85%;
+    margin: auto;
+}
+
+.car-types {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.vehicle-card {
+    text-align: center;
+    margin: 2.5rem 0;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        cursor: pointer;
+
+        img {
+            transform: scale(1.05);
+        }
+
+        p {
+            font-weight: 400;
+        }
+    }
+
+    img {
+        max-width: 500px;
+        transition: all 0.3s ease;
+    }
+
+    p {
+        margin-top: 2rem;
+        color: $soft-black;
+        transition: all 0.05s ease;
+        font-weight: 300;
+    }
+}
+
+@media (max-width: 480px) {
+    .vehicle-card {
+        margin-bottom: -6rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .car-types {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 6rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .vehicle-card-hatchbacks p {
+        margin-top: 1rem;
+    }
+
+    .vehicle-card-hatchbacks img {
+        margin-top: -1.5rem;
+    }
+
+    .vehicle-card-suvs p {
+        margin-top: 1rem;
+    }
+
+    .vehicle-card-suvs img {
+        margin-top: -1.5rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .car-types {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .vehicle-card-suvs p {
+        margin-top: 0rem;
+    }
+
+    .vehicle-card-suvs img {
+        margin-top: -3rem;
+    }
+
+    .vehicle-card-camionetas p {
+        margin-top: 0rem;
+    }
+
+    .vehicle-card-camionetas img {
+        margin-top: -1rem;
+    }
+}
+
+@media (min-width: 1800px) {
+    .vehicle-card-suvs img {
+        transform: scale(0.9);
+    }
+
+    // Decreases the scale when hover 
+    .vehicle-card-suvs:hover img {
+        transform: scale(0.94);
+    }
+
+    .vehicle-card-camionetas img {
+        transform: scale(0.8);
+    }
+
+    // Decreases the scale when hover 
+    .vehicle-card-camionetas:hover img {
+        transform: scale(0.85);
+    }
+}
+
+// Categories 
+.categories-section {
+    margin-top: 8rem;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+.cat-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    color: $soft-black;
+}
+
+.cat-card:hover {
+    cursor: pointer;
+}
+
+.cat-card:hover > div {
+    box-shadow: 0 0 25px -10px rgba(0, 0, 0, 0.25);
+}
+
+.cat-card:hover > p {
+    font-weight: 400;
+}
+
+.cat-card > div {
+    background-color: #F8F8F8;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: 2px solid #F1F1F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.cat-card > p {
+    font-weight: 300;
+    font-size: 1.4rem;
+    transition: all 0.05s ease;
+}
+
+// Section Concesionarias 
+.section-concesionarias-comprar h2 {
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+}
+
+.card-info-concesionaria {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0 0 30px -8px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 8rem;
+}
+
+.card-info-concesionaria > img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 200px;
+}
+
+.info-concesionaria {
+    padding: 1rem 1.5rem;
+
+    b {
+        font-weight: 400;
+    }
+}
+
+.info-concesionaria > h3 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: $soft-black;
+}
+
+.info-concesionaria > p {
+    font-weight: 300;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: $soft-black;
+}
+
+.btn-info-financiamiento {
+    display: block;
+    color: $soft-black;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    transition: all 0.2s ease;
+
+    &:hover {
+        text-decoration: underline;
+        transform: scale(1.005);
+    }
+}
+
+.info-concesionaria > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-concesionaria > div > img {
+    max-width: 200px;
+}
+
+.btn-concesionaria-comprar {
+    color: $white;
+    background-color: $soft-black;
+    padding: 10px 20px;
+    font-size: 1.4rem;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.25);
+        background-color: #414141;
+    }
+}
+
+@media (min-width: 992px) {
+    .card-info-concesionaria {
+        display: flex;
+        gap: 1rem;
+        height: 380px;
+    }
+
+    .card-info-concesionaria > img {
+        height: 100%;
+        max-height: 100%;
+        width: 33%; 
+    }
+
+    .info-concesionaria h3 {
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    .info-concesionaria p:nth-child(3) {
+        margin-bottom: 3rem;
+    }
+
+    .btn-info-financiamiento {
+        margin-bottom: 6rem;
+    }
+}
+
+// Button Ver Todos los Autos 
+.btn-ver-autos {
+    color: $soft-black;
+    border: 2px solid $soft-black;
+    border-radius: 50px;
+    padding: 10px 40px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 75%;
+    max-width: 300px;
+    margin-bottom: 4rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: $white;
+        background-color: $soft-black;
+    }
+}

@@ -1,0 +1,243 @@
+// --------- VENDER --------- 
+
+.vender-banner {
+    background-image: url(../img/images/vender/vender-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    display: flex;
+    align-items: flex-end;
+    padding: 3% 5%;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $black-linear-gradient;
+    }
+
+    b {
+        font-weight: 700;
+    }
+}
+
+.vender-banner > h1 {
+    color: $white;
+    font-weight: 400;
+    z-index: 1;
+}
+
+.main-vender {
+    width: 90%;
+    max-width: 1000px;
+    margin: 4rem auto;
+    color: $soft-black;
+}
+
+.form-vender > section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 8rem 0;
+    box-shadow: 0 0 20px -4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.form-vender > section > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-vender > section > div {
+    width: 70%;
+    margin: 4rem;
+}
+
+.form-vender > section > div > h2 {
+    font-weight: 500;
+    font-size: 2.4rem;
+    margin-bottom: 4rem;
+}
+
+.form-vender > section > div > img {
+    width: 50%;
+    max-width: 200px;
+    margin-top: 10rem;
+    margin-left: 20%;
+}
+
+.form-vender input,
+.form-vender textarea,
+.form-vender select {
+    font-size: 1.6rem;
+}
+
+.brand-section {
+    max-height: 510px;
+}
+
+.brand-section > img {
+    max-height: 510px;
+}
+
+.cat-section {
+    max-height: 720px;
+}
+
+.cat-section > img {
+    max-height: 720px;
+}
+
+.tec-section {
+    max-height: 400px;
+}
+
+.tec-section > img {
+    max-height: 400px;
+}
+
+.pictures-section {
+    max-height: 600px;
+
+    p {
+        margin-top: -3.2rem;
+        font-weight: 400;
+        color: $soft-black-hover;
+        margin-bottom: 4rem;
+    }
+}
+
+.pictures-section > img {
+    max-height: 600px;
+}
+
+.location-section {
+    max-height: 450px;
+}
+
+.location-section > img {
+    max-height: 450px;
+}
+
+.end-section {
+    max-height: 430px;
+}
+
+.end-section > img {
+    max-height: 430px;
+}
+
+.field-price {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.field-price > h4 {
+    margin-bottom: 0.8rem;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.btn-publish {
+    display: block;
+    width: 300px;
+    margin: auto;
+    margin-top: 10rem;
+    margin-bottom: 6rem;
+    border: none;
+    background-color: $main-blue;
+    padding: 15px;
+    color: $white;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+}
+
+.btn-publish:hover {
+    background-color: $main-blue-hover;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+}
+
+.upload-image-box {
+    border: 2px solid #757575;
+    border-radius: 4px;
+    width: 100%;
+    height: 60%;
+    min-height: 280px;
+    padding: 2rem;
+}
+
+.upload-image-box > input[type=file] {
+    display: none;
+}
+
+.upload-image-box > label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    width: 85px;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 15px -2px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+}
+
+.upload-image-box > label:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px -2px rgba(0, 0, 0, 0.25);
+    background-color: #f3f3f3;
+}
+
+.upload-image-box > label > img {
+    width: 25px;
+    display: block;
+}
+
+.upload-image-box > label > p {
+    display: block;
+    text-align: center;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 583px) {
+    .aside-img {
+        display: none;
+    }
+
+    .logo-ch-vender {
+        display: none;
+    }
+
+    .form-vender > section {
+        display: block;
+        margin: 4rem 0;
+        box-shadow: none;
+    }
+
+    .form-vender > section > div {
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+    .btn-publish {
+        margin-top: 6rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .logo-ch-vender {
+        display: none;
+    }
+}

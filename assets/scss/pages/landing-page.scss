@@ -1,0 +1,409 @@
+// Banner 
+.banner {
+    background-color: $soft-black;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    max-height: 30rem;
+    object-fit: cover;
+    animation: showImageOpacity 2s;
+}
+
+@keyframes showImageOpacity {
+    from {
+        opacity: 0%;
+    }
+}
+
+.banner-content {
+    color: $white;
+    padding: 3rem 3rem 4rem 3rem;
+    animation: appearFromLeft 2s -0.8s;
+
+    h1 {
+        margin-bottom: 3rem;
+    }
+
+    b {
+        color: $main-blue;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-weight: 300;
+        margin-bottom: 4rem;
+    }
+}
+
+.btn-explorar {
+    color: $white;
+    background-color: $main-blue;
+    border-radius: 50px;
+    padding: 8px 50px;
+    margin: 30px 0;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: $main-blue-hover;
+    }
+}
+
+@media (min-width: 583px) and (max-width: 991px) {
+    .banner {
+        height: 85vh;
+    }
+
+    .banner-img {
+        max-height: 60%;
+    }
+}
+
+@media (min-width: 992px) {
+    .banner {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 68vh;
+    }
+
+    .banner-img {
+        width: 50%;
+        flex-basis: 50%;
+        max-height: 100%;
+        height: 100%;
+    }
+
+    .banner-content {
+        flex-basis: 50%;
+        padding-left: 7rem;
+    }
+}
+
+@media (min-width: 1600px) {
+    .banner-content {
+        padding-left: 19rem;
+        transform: scale(1.1);
+    }
+
+    .banner {
+        height: 78vh;
+    }
+}
+
+// --- MAIN --- 
+.main-content {
+    max-width: 90%;
+    margin: auto;
+    overflow: hidden;
+
+    h2 {
+        text-align: center;
+        margin-top: 4rem;
+        color: $soft-black;
+    }
+
+    h3 {
+        margin-left: 4rem;
+        margin-bottom: 2rem;
+        font-weight: 300;
+        color: $soft-black;
+    }
+
+    p {
+        text-align: center;
+        margin: 1.8rem auto 0 auto;
+        font-weight: 300;
+        color: $soft-black;
+        max-width: 500px;
+    }
+
+    img {
+        width: 80%;
+        max-width: 75rem;
+        display: block;
+        margin: 5rem auto 3rem auto;
+    }
+}
+
+// Animations when Button Explorar is Clicked
+.main-content:target .section-vender > img {
+    animation: appearLeftOpacity 1s;
+}
+
+.main-content:target .section-vender > div {
+    animation: appearRightOpacity 1s;
+}
+
+.main-content:target .section-comprar > img {
+    animation: appearRightOpacity 1s;
+}
+
+.main-content:target .section-comprar > div {
+    animation: appearLeftOpacity 1s;
+}
+
+.main-content:target .section-concesionarias > img {
+    animation: appearLeftOpacity 1s;
+}
+
+.main-content:target .section-concesionarias > div {
+    animation: appearRightOpacity 1s;
+}
+
+.main-content:target .section-contacto > img {
+    animation: appearLeftOpacity 1s;
+}
+
+.main-content:target .section-contacto > div {
+    animation: appearRightOpacity 1s;
+}
+
+@keyframes appearLeftOpacity {
+    from {
+        opacity: 0;
+        transform: translateX(-50rem);
+    }
+}
+
+@keyframes appearRightOpacity {
+    from {
+        opacity: 0;
+        transform: translateX(50rem);
+    }
+}
+
+// Buttons 
+.btn-vender {
+    margin-left: 4rem;
+    color: $white;
+    background-color: $main-blue;
+    border-radius: 50px;
+    padding: 8px 40px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: #4a9fe9;
+        box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.btn-comprar {
+    margin-left: 4rem;
+    color: $white;
+    background-color: $soft-green;
+    border-radius: 50px;
+    padding: 8px 40px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: #26c076;
+        box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.btn-concesionarias {
+    margin-left: 4rem;
+    color: $white;
+    background-color: $soft-red;
+    border-radius: 50px;
+    padding: 8px 40px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: #f14040;
+        box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.btn-contacto {
+    margin-left: 4rem;
+    color: $white;
+    background-color: $mustard;
+    border-radius: 50px;
+    padding: 8px 40px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: #f3ad21;
+        box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.25);
+    }
+}
+
+// Sections 
+.section-vender b {
+    color: $main-blue;
+}
+
+.section-comprar b {
+    color: $soft-green;
+}
+
+.section-concesionarias {
+    margin-bottom: 10rem;
+
+    b {
+        color: $soft-red;
+    }
+
+    h3:first-child {
+        margin-bottom: 1rem;
+    }
+}
+
+.section-contacto {
+    margin-bottom: 10rem;
+
+    b {
+        color: $mustard;
+    }
+}
+
+.section-perfil b {
+    color: $violet;
+}
+
+.section-perfil a {
+    background-color: $violet;
+
+    &:hover {
+        background-color: #7f79ff;
+    }
+}
+
+@media (min-width: 584px) {
+    .main-content h2 {
+        margin-top: 8rem;
+    }
+
+    .section-vender {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        margin: 8rem 0 0 0;
+
+        img {
+            margin: 0;
+            width: 50%;
+            max-width: 435px;
+        }
+
+        div {
+            margin: 0;
+        }
+
+        h3 {
+            margin: 0 0 2rem 0;
+        }
+    }
+
+    .btn-vender {
+        margin: 0;
+    }
+
+    .section-comprar {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        margin: 8rem 0 0 0;
+
+        img {
+            margin: 0;
+            width: 50%;
+            max-width: 435px;
+        }
+
+        div {
+            margin: 0;
+        }
+
+        h3 {
+            margin: 0 0 2rem 0;
+        }
+    }
+
+    .btn-comprar {
+        margin: 0;
+    }
+
+    .section-concesionarias {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        margin: 8rem 0 8rem 0;
+
+        img {
+            margin: 0;
+            width: 50%;
+            max-width: 435px;
+        }
+
+        div {
+            margin: 0;
+        }
+
+        h3 {
+            margin: 0 0 2rem 0;
+        }
+    }
+
+    .btn-concesionarias {
+        margin: 0;
+    }
+
+    .section-contacto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        margin: 8rem 0 8rem 0;
+
+        img {
+            margin: 0;
+            width: 50%;
+            max-width: 435px;
+        }
+
+        div {
+            margin: 0;
+        }
+
+        h3 {
+            margin: 0 0 2rem 0;
+        }
+    }
+
+    .btn-contacto {
+        margin: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .section-vender {
+        margin-top: 8rem;
+        gap: 10rem;
+    }
+
+    .section-comprar {
+        margin-top: 8rem;
+        gap: 10rem;
+    }
+
+    .section-concesionarias {
+        margin-top: 8rem;
+        margin-bottom: 15rem;
+        gap: 10rem;
+    }
+
+    .section-contacto {
+        margin-top: 8rem;
+        margin-bottom: 15rem;
+        gap: 10rem;
+    }
+}

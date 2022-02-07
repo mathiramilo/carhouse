@@ -1,0 +1,62 @@
+// --- RESET AND ADJUSTMENTS --- 
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
+    scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $main-font;
+    font-size: 1.6rem;
+    line-height: 1.3;
+}
+
+// Font for placeholders 
+*::placeholder {
+    font-family: $main-font;
+}
+
+// Hide the reset X for search inputs
+input[type=search]::-webkit-search-cancel-button {
+    display: none;
+}
+
+input[type=search]::-ms-clear {
+    display: none; width : 0; height: 0;
+}
+
+// Disbale the Resizing and Horizontal Scroll of Textarea & setting the font 
+textarea {
+    resize: none;
+    overflow-x: hidden;
+    font-family: $main-font;
+}
+
+// Setting the font for the inputs 
+input {
+    font-family: $main-font;
+}
+
+// Reset Input type Submit 
+input[type=submit] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select {
+    font-family: $main-font;
+}
+
+// Cursor pointer for Submit buttons and selects
+input[type=submit]:hover,
+input[type=file]:hover,
+select:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,274 @@
+// ------------ COMPRAR ------------ 
+
+// Search Bar 
+.search-form {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    padding: 0.2rem;
+    width: 90%;
+    max-width: 1600px;
+    border: 2px solid #ebebeb;
+    border-radius: 50px;
+    background-color: #F3F3F3;
+    transition: all 0.3s ease;
+
+    &:focus-within {
+        border-color: $main-blue;
+    }
+}
+
+.search-bar {
+    width: 90%;
+    padding: 1rem;
+    border: none;
+    background-color: transparent;
+
+    &:focus {
+        outline: none;
+    }
+
+    &::placeholder {
+        color: #a5a5a5;
+        font-weight: 400;
+        font-size: 1.4rem;
+    }
+}
+
+.search-btn {
+    margin-right: 1rem;
+    border: none;
+    background-color: transparent;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+// --- MAIN --- 
+.main-comprar {
+    margin: 3rem auto 3rem auto;
+    width: 90%;
+    max-width: 1600px;
+}
+
+.amount-sort-section {
+    margin: 0 0 3rem 0;
+}
+
+.total-vehicles {
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.sort-vehicles {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    p {
+        font-weight: 500;
+    }
+
+    select {
+        border: none;
+        background-color: $soft-gray;
+        border-radius: 50px;
+        padding: 0.4rem;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    option {
+        background-color: $white;
+    }
+}
+
+// Filter and Cars 
+.filter-cars {
+    margin: 0 0 3rem 0;
+}
+
+// Filter 
+.filter-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    p {
+        font-weight: 500;
+    }
+
+    a {
+        color: $white;
+        font-weight: 300;
+        background-color: $main-blue;
+        border-radius: 50px;
+        padding: 0.3rem 1.8rem;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: $main-blue-hover;
+            box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.25);
+        }
+    }
+}
+
+.filters div:not(.filter-title) {
+    display: none;
+    font-weight: 300;
+}
+
+// Cars 
+.cars-list {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    
+}
+
+.card-car {
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 0px 0px 20px -8px rgba(0, 0, 0, 0.25);
+    color: var(--soft-black);
+    transition: all 0.2s ease;
+
+    &:hover {
+        box-shadow: 0px 0px 25px -4px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.card-car > img {
+    height: 120px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-car > div {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.card-car > div:nth-child(2) {
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.car-brand {
+    display: flex;
+    align-items: center;
+}
+
+.car-brand > img {
+    margin-right: 1rem;
+}
+
+.car-brand > h3 {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+// Pages 
+.pages {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 8rem;
+    margin-bottom: 6rem;
+
+    a {
+        color: $soft-black;
+        font-size: 1.6rem;
+        font-weight: 500;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        transition: all 0.2s ease;
+
+        &:hover {
+            color: $main-blue;
+        }
+
+        &:first-child {
+            color: $main-blue;
+            background-color: #ebebeb;
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    .filter-cars {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        margin-top: 6rem;
+    }
+
+    .filters div:not(.filter-title) {
+        display: flex;
+    }
+
+    .filter-title a {
+        display: none;
+    }
+
+    .filter-title {
+        margin-bottom: 4rem;
+    }
+
+    .filters {
+        align-self: flex-start;
+        position: sticky;
+        top: 3rem;
+    }
+
+    .filters div:not(.filter-title) {
+        margin-bottom: 2.5rem;
+        gap: 2rem;
+        justify-content: space-between;
+        align-items: center;
+        width: 150px;
+    }
+
+    .filters div:not(.filter-title) img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .cars-list {
+        align-self: flex-start;
+        margin: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .amount-sort-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1650px;
+    }
+
+    .filter-cars {
+        grid-template-columns: 2fr 8fr;
+        margin-top: 6rem;
+    }
+
+    .cars-list {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 3rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .cars-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

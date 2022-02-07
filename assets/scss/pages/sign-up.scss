@@ -1,0 +1,107 @@
+// --------- SIGN-UP --------- 
+
+.sign-up-content {
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.sign-in-content > a > img {
+    width: 65%;
+    max-width: 300px;
+    margin-bottom: 1rem;
+    margin-left: -0.5rem;
+}
+
+.sign-up-form {
+    width: 100%;
+    max-width: 900px;
+    overflow: hidden;
+}
+
+.sign-up-fields {
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 3rem;
+    animation: appearFromLeft 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.sign-up-field {
+    width: 100%;
+    max-width: 900px;
+}
+
+.sign-up-field > input,
+.sign-up-field > .field-price > input,
+.sign-up-field > select,
+.sign-up-field > textarea {
+    width: 100%;
+    max-width: 900px;
+    border: none;
+    border-bottom: 3px solid $soft-black;
+    padding: 10px 0 5px 1px;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.sign-up-field > input::placeholder,
+.sign-up-field > .field-price > input::placeholder,
+.sign-up-field > select::placeholder,
+.sign-up-field > textarea::placeholder {
+    transition: all 0.3s ease;
+}
+
+.sign-up-field > input:hover::placeholder,
+.sign-up-field > .field-price > input:hover::placeholder,
+.sign-up-field > select:hover::placeholder,
+.sign-up-field > textarea:hover::placeholder {
+    transform: translate(3px, 0);
+}
+
+.sign-up-field > input:focus,
+.sign-up-field > .field-price > input:focus,
+.sign-up-field > select:focus,
+.sign-up-field > textarea:focus {
+    outline: none;
+    border-color: $main-blue;
+}
+
+.sign-up-field > input::placeholder {
+    color: #858585;
+}
+
+.sign-up-field > h3 {
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.sign-up-field:first-of-type > h3 {
+    margin-top: 3rem;
+}
+
+.sign-up-field:focus-within > h3 {
+    color: $main-blue;
+}
+
+@media (max-width: 1399px) {
+    .sign-up-footer {
+        margin-top: 10rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .sign-up-fields {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 2rem;
+        column-gap: 4rem;
+        align-items: center;
+    }
+
+    .sign-up-footer {
+        margin-top: 10rem;
+    }
+
+    .birthdate-field {
+        margin-top: 1.5rem;
+    }
+}
