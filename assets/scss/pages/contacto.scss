@@ -1,0 +1,124 @@
+// ---------  CONTACTANOS --------- 
+
+.banner-contactanos {
+    height: 300px;
+    background-image: url(../img/images/contactanos/texting-while-driving.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 3% 5%;
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $black-linear-gradient;
+    }
+
+    > h1 {
+        color: $white;
+        font-weight: 400;
+        z-index: 1;
+    }
+}
+
+.section-contactanos {
+    width: 90%;
+    max-width: 1200px;
+    margin: 6rem auto 6rem auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 30px -3px rgba(0, 0, 0, 0.25);
+    color: $soft-black;
+}
+
+.issues {
+    background-color: $soft-black;
+    padding: 2rem;
+    text-align: center;
+
+    > h3 {
+        font-weight: 500;
+        font-size: 2rem;
+        color: $white;
+        margin-bottom: 2.5rem;
+    }
+
+    > a {
+        display: block;
+        font-weight: 300;
+        font-size: 1.4rem;
+        margin: 2rem auto;
+        color: $white;
+        transition: all 0.2s ease;
+    }
+}
+
+.issues > a:not(.issues > a:first-of-type):hover {
+    color: #d6d6d6;
+}
+
+.issues > a:first-of-type {
+    color: $main-blue;
+}
+
+.form-section {
+    width: 80%;
+    margin: 3rem auto 1rem auto;
+    overflow: hidden;
+}
+
+.contact-form > .sign-up-field {
+    width: 90%;
+    animation: appearFromLeft 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.btn-enviar {
+    border: none;
+    width: 100%;
+    max-width: 330px;
+    margin-top: 2rem;
+    padding: 10px;
+    background-color: $main-blue;
+    border-radius: 50px;
+    color: $white;
+    font-weight: 500;
+    font-size: 1.8rem;
+    transition: all 0.2s ease;
+
+    &:hover {
+        background-color: $main-blue-hover;
+    }
+}
+
+.form-section > .logo-carhouse {
+    display: block;
+    width: 40%;
+    max-width: 180px;
+    margin: 4rem auto 0 auto;
+}
+
+@media (min-width: 882px) {
+    .section-contactanos {
+        display: grid;
+        grid-template-columns: 3fr 7fr;
+    }
+
+    .issues {
+        text-align: start;
+        padding-left: 3rem;
+        padding-top: 3rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .issues {
+        padding-left: 4rem;
+    }
+}

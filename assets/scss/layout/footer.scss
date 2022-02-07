@@ -84,6 +84,29 @@
     height: 20px;
 }
 
+.developed-by {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+
+    h6 {
+        font-weight: 300;
+        font-size: 1.1rem;
+        color: $soft-black-hover;
+    }
+
+    a {
+        color: $soft-black;
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: $main-blue;
+        }
+    }
+}
+
 @media (min-width: 992px) {
     .footer-bar {
         display: flex;
