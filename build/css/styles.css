@@ -550,7 +550,7 @@ select:hover {
     gap: 10rem; } }
 
 .vender-banner {
-  background-image: url(../img/images/vender/vender-wallpaper.jpg);
+  background-image: url(../../assets/img/images/vender/vender-wallpaper.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1816,8 +1816,7 @@ select:hover {
 @media (min-width: 815px) {
   .user-info {
     display: grid;
-    grid-template-areas: "img-name btn-my-data"
- "data location";
+    grid-template-areas: "img-name btn-my-data" "data location";
     align-items: center;
     row-gap: 2rem; }
   .user-img-name {
@@ -1926,13 +1925,7 @@ select:hover {
 .car-section {
   margin-bottom: 8rem;
   display: grid;
-  grid-template-areas: "images"
- "principal-info"
- "technical-info"
- "seller-data"
- "description"
- "location"
- "questions";
+  grid-template-areas: "images" "principal-info" "technical-info" "seller-data" "description" "location" "questions";
   row-gap: 2rem; }
 
 .car-img {
@@ -2177,10 +2170,7 @@ select:hover {
     .btn-return-comprar p {
       display: block; }
   .car-section {
-    grid-template-areas: "images principal-info"
- "technical-info seller-data"
- "description location"
- "questions questions";
+    grid-template-areas: "images principal-info" "technical-info seller-data" "description location" "questions questions";
     column-gap: 2rem;
     box-shadow: 0 0 45px -15px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
@@ -2230,7 +2220,7 @@ select:hover {
     align-self: center; } }
 
 .concesionarias-banner {
-  background-image: url(../img/images/concesionarias/porsche-banner.jpg);
+  background-image: url(../../assets/img/images/concesionarias/porsche-banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -2340,7 +2330,7 @@ select:hover {
   margin: 10rem 0; }
 
 .contact-concessionaire {
-  background-image: url(../img/images/concesionarias/can-wallpaper.jpg);
+  background-image: url(../../assets/img/images/concesionarias/can-wallpaper.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2392,7 +2382,7 @@ select:hover {
       background-color: #b61f1f; }
 
 .info-concessionaire {
-  background-image: url(../img/images/concesionarias/con-wall2.jpg);
+  background-image: url(../../assets/img/images/concesionarias/con-wall2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2791,7 +2781,7 @@ select:hover {
 
 .banner-financing-info {
   height: 300px;
-  background-image: url(../img/images/financiamiento-info/fin-wallpaper.jpg);
+  background-image: url(../../assets/img/images/financiamiento-info/fin-wallpaper.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -2844,7 +2834,7 @@ select:hover {
 
 .banner-contactanos {
   height: 300px;
-  background-image: url(../img/images/contactanos/texting-while-driving.jpeg);
+  background-image: url(../../assets/img/images/contactanos/texting-while-driving.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
