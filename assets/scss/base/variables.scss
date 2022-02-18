@@ -18,11 +18,13 @@ $soft-gray: #D7D7D7;
 $translucid-white: #ffffffe1;
 $translucid-white-hover: #ffffff85;
 
-// Landing Page Colors 
-$soft-green: #2CD082;
-$soft-red: #FF4A4A;
-$mustard: #FFB627;
-$violet: #6c63ff;
+// Landing Page Colors - MAP
+$landing-colors: (
+    soft-green: #2CD082,
+    soft-red: #FF4A4A,
+    mustard: #FFB627,
+    violet: #6c63ff
+);
 
 // Sign-in - Sign-up Colors 
 $soft-violet: #A655C7;

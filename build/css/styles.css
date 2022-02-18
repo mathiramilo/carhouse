@@ -394,49 +394,31 @@ select:hover {
     opacity: 0;
     transform: translateX(50rem); } }
 
-.btn-vender {
+.btn-vender, .btn-comprar, .btn-concesionarias, .btn-contacto {
   margin-left: 4rem;
   color: #FFFFFF;
   background-color: #60B0F4;
   border-radius: 50px;
   padding: 8px 40px;
   transition: all 0.3s ease; }
-  .btn-vender:hover {
+  .btn-vender:hover, .btn-comprar:hover, .btn-concesionarias:hover, .btn-contacto:hover {
     background-color: #4a9fe9;
     box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.25); }
 
 .btn-comprar {
-  margin-left: 4rem;
-  color: #FFFFFF;
-  background-color: #2CD082;
-  border-radius: 50px;
-  padding: 8px 40px;
-  transition: all 0.3s ease; }
+  background-color: #2CD082; }
   .btn-comprar:hover {
-    background-color: #26c076;
-    box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.25); }
+    background-color: #26c076; }
 
 .btn-concesionarias {
-  margin-left: 4rem;
-  color: #FFFFFF;
-  background-color: #FF4A4A;
-  border-radius: 50px;
-  padding: 8px 40px;
-  transition: all 0.3s ease; }
+  background-color: #FF4A4A; }
   .btn-concesionarias:hover {
-    background-color: #f14040;
-    box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.25); }
+    background-color: #f14040; }
 
 .btn-contacto {
-  margin-left: 4rem;
-  color: #FFFFFF;
-  background-color: #FFB627;
-  border-radius: 50px;
-  padding: 8px 40px;
-  transition: all 0.3s ease; }
+  background-color: #FFB627; }
   .btn-contacto:hover {
-    background-color: #f3ad21;
-    box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.25); }
+    background-color: #f3ad21; }
 
 .section-vender b {
   color: #60B0F4; }
@@ -481,7 +463,7 @@ select:hover {
       margin: 0; }
     .section-vender h3 {
       margin: 0 0 2rem 0; }
-  .btn-vender {
+  .btn-vender, .btn-comprar, .btn-concesionarias, .btn-contacto {
     margin: 0; }
   .section-comprar {
     display: flex;
@@ -795,6 +777,7 @@ select:hover {
 .brand-card {
   display: flex;
   flex-direction: column;
+  gap: 0;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease; }

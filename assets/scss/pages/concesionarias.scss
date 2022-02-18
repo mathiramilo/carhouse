@@ -126,8 +126,8 @@
     transition: all 0.3s ease;
 
     &:hover {
-        border-color: $mustard;
-        background-color: $mustard;
+        border-color: map-get($landing-colors, mustard);
+        background-color: map-get($landing-colors, mustard);
         color: $white;   
     }
 }

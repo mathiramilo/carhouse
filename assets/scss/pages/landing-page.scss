@@ -191,44 +191,29 @@
 }
 
 .btn-comprar {
-    margin-left: 4rem;
-    color: $white;
-    background-color: $soft-green;
-    border-radius: 50px;
-    padding: 8px 40px;
-    transition: all 0.3s ease;
+    @extend .btn-vender;
+    background-color: map-get($landing-colors, soft-green);
 
     &:hover {
         background-color: #26c076;
-        box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.25);
     }
 }
 
 .btn-concesionarias {
-    margin-left: 4rem;
-    color: $white;
-    background-color: $soft-red;
-    border-radius: 50px;
-    padding: 8px 40px;
-    transition: all 0.3s ease;
+    @extend .btn-vender;
+    background-color: map-get($landing-colors, soft-red);
 
     &:hover {
         background-color: #f14040;
-        box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.25);
     }
 }
 
 .btn-contacto {
-    margin-left: 4rem;
-    color: $white;
-    background-color: $mustard;
-    border-radius: 50px;
-    padding: 8px 40px;
-    transition: all 0.3s ease;
+    @extend .btn-vender;
+    background-color: map-get($landing-colors, mustard);
 
     &:hover {
         background-color: #f3ad21;
-        box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.25);
     }
 }
 
@@ -238,14 +223,14 @@
 }
 
 .section-comprar b {
-    color: $soft-green;
+    color: map-get($landing-colors, soft-green);
 }
 
 .section-concesionarias {
     margin-bottom: 10rem;
 
     b {
-        color: $soft-red;
+        color: map-get($landing-colors, soft-red);
     }
 
     h3:first-child {
@@ -257,16 +242,16 @@
     margin-bottom: 10rem;
 
     b {
-        color: $mustard;
+        color: map-get($landing-colors, mustard);
     }
 }
 
 .section-perfil b {
-    color: $violet;
+    color: map-get($landing-colors, violet);
 }
 
 .section-perfil a {
-    background-color: $violet;
+    background-color: map-get($landing-colors, violet);
 
     &:hover {
         background-color: #7f79ff;

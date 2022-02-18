@@ -64,16 +64,13 @@
 
 // Main Brands 
 .main-brands {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    @include grid(3, 2rem);
     margin-bottom: 10rem;
     margin-top: 3rem;
 }
 
 .brand-card {
-    display: flex;
-    flex-direction: column;
+    @include flex(column);
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
@@ -267,9 +264,7 @@
 }
 
 .categories {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    @include grid(3, 2rem);
     max-width: 600px;
     margin: auto;
 }
