@@ -76,6 +76,8 @@ select:hover {
 .hamburguer {
   font-size: 2.8rem;
   color: #1F1F1F;
+  border: none;
+  background-color: transparent;
   transition: all 0.3s ease; }
   .hamburguer:hover {
     color: #7a7a7a;
