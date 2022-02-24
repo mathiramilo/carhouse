@@ -534,7 +534,7 @@ select:hover {
     gap: 10rem; } }
 
 .vender-banner {
-  background-image: url(../../assets/img/images/vender/vender-wallpaper.jpg);
+  background-image: url(../../assets/img/images/vender/vender-wallpaper.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -727,7 +727,7 @@ select:hover {
     display: none; } }
 
 .banner-comprar-home {
-  background-image: url(../../assets/img/images/comprar-home/comprar-wallpaper.jpg);
+  background-image: url(../../assets/img/images/comprar-home/comprar-wallpaper.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2205,7 +2205,7 @@ select:hover {
     align-self: center; } }
 
 .concesionarias-banner {
-  background-image: url(../../assets/img/images/concesionarias/porsche-banner.jpg);
+  background-image: url(../../assets/img/images/concesionarias/porsche-banner.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -2315,7 +2315,7 @@ select:hover {
   margin: 10rem 0; }
 
 .contact-concessionaire {
-  background-image: url(../../assets/img/images/concesionarias/can-wallpaper.jpg);
+  background-image: url(../../assets/img/images/concesionarias/can-wallpaper.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2367,7 +2367,7 @@ select:hover {
       background-color: #b61f1f; }
 
 .info-concessionaire {
-  background-image: url(../../assets/img/images/concesionarias/con-wall2.jpg);
+  background-image: url(../../assets/img/images/concesionarias/con-wall2.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2766,7 +2766,7 @@ select:hover {
 
 .banner-financing-info {
   height: 300px;
-  background-image: url(../../assets/img/images/financiamiento-info/fin-wallpaper.jpg);
+  background-image: url(../../assets/img/images/financiamiento-info/fin-wallpaper.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
