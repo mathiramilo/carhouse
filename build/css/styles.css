@@ -2798,17 +2798,21 @@ select:hover {
     margin-bottom: 2rem;
     font-weight: 500;
     font-size: 2.4rem;
-    animation: scale 0.8s cubic-bezier(0.075, 0.82, 0.165, 1); }
+    animation: appearFromBottom 0.8s cubic-bezier(0.075, 0.82, 0.165, 1); }
   .section-financing-info p {
     margin-bottom: 4rem;
     font-weight: 300;
     font-size: 1.6rem;
-    animation: appearFromLeft 0.8s cubic-bezier(0.075, 0.82, 0.165, 1); }
+    animation: appearFromBottom 0.8s cubic-bezier(0.075, 0.82, 0.165, 1); }
   .section-financing-info img {
     display: block;
     width: 40%;
     max-width: 180px;
     margin: 4rem auto 0 auto; }
+
+@keyframes appearFromBottom {
+  0% {
+    transform: translateY(50vh); } }
 
 @media (min-width: 1200px) {
   .section-financing-info {
