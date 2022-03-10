@@ -3,7 +3,7 @@ CarHouse is a website for buying and selling vehicles. In it you can search amon
 ## Information
 Final Project of Coderhouse Web Development Course
 * **Developed by: Mathias Ramilo**
-* **Website:** https://mathiramilo.github.io/CarHouse-Ramilo/
+* **Website:** https://mathiramilo.github.io/CarHouse/
 ## Tools
 ### Languages
 * **HTML5**
