@@ -19,3 +19,4 @@ Final Project of Coderhouse Web Development Course
 * 
 ## Contact
 * **GitHub:** https://github.com/mathiramilo
+* **Linkedin:** https://www.linkedin.com/in/mathias-ramilo/
