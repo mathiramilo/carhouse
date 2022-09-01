@@ -8,7 +8,7 @@ CarHouse is a website for buying and selling vehicles. In it you can search amon
 1. **`Landing Page`** (Welcome page)
 2. **`Buy`** (Search for a vehicle)
 3. **`Sell`** (Sell your vehicle)
-4. **`Dealerships`** (Look at cars offered by dealers)
+4. **`Dealerships`** (Look at cars offered by dealerships)
 5. **`Sign In / Sign Up`** (Create an account or login)
 6. **`Contact`** (Contact us, register your dealership)
 7. **`My Profile`** (Your basic information, users can see their cars posted for sale and favorites)
@@ -58,7 +58,7 @@ In order to achieve a full responsive website that that can be perfectly seen fr
 
 ### `2. No CSS Framework`
 
-No CSS Framework was used to develop this website. 
+No CSS Framework was used to develop this website.
 
 ## Languages
 
